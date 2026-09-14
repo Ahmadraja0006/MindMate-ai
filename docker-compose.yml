@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: mindmate-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: mindmate
+      POSTGRES_USER: mindmate
+      POSTGRES_PASSWORD: mindmate_dev_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - mindmate_pgdata:/var/lib/postgresql/data
+volumes:
+  mindmate_pgdata:

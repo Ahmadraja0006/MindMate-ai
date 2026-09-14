@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "MindMate AI",
+    "slug": "mindmate-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "scheme": "mindmate",
+    "android": {
+      "package": "com.mindmateai.sih26003",
+      "versionCode": 1,
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#2563EB"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.mindmateai.sih26003"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#2563EB"
+        }
+      ]
+    ],
+    "icon": "./assets/icon.png"
+  }
+}
